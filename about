@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Emily Franz-Lien</title>
+    <style>
+      :root {
+        --bg1: #fdf2f8;
+        --bg2: #eef2ff;
+        --bg3: #ecfeff;
+        --card: rgba(255, 255, 255, 0.78);
+        --text: #1f2937;
+        --muted: #6b7280;
+        --line: rgba(255, 255, 255, 0.45);
+        --accent: #111827;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--text);
+        line-height: 1.6;
+        min-height: 100vh;
+        background:
+          radial-gradient(circle at top left, rgba(255, 182, 193, 0.55), transparent 32%),
+          radial-gradient(circle at top right, rgba(167, 139, 250, 0.35), transparent 30%),
+          radial-gradient(circle at bottom left, rgba(96, 165, 250, 0.28), transparent 28%),
+          linear-gradient(135deg, var(--bg1), var(--bg2) 48%, var(--bg3));
+        background-attachment: fixed;
+      }
+
+      .wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 64px 24px;
+      }
+
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 5vw, 3.2rem);
+        line-height: 1.05;
+        margin: 0 0 12px;
+      }
+
+      p {
+        margin: 0 0 18px;
+        font-size: 1.02rem;
+      }
+
+      .section {
+        margin-top: 32px;
+        padding-top: 32px;
+        border-top: 1px solid rgba(17, 24, 39, 0.08);
+      }
+
+      .eyebrow {
+        font-size: 0.95rem;
+        color: var(--muted);
+        margin-bottom: 12px;
+      }
+
+      .link,
+      .link:visited {
+        color: #111;
+        text-decoration: underline;
+      }
+
+      @media (max-width: 640px) {
+        .card {
+          padding: 28px;
+        }
+
+        .wrap {
+          padding: 24px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrap">
+      <section class="card">
+        <p class="eyebrow"><a href="index.html" class="link">Home</a></p>
+        <h1>About Me</h1>
+        <p>
+          I’m a founder, engineer, and investor who likes building practical software, cleaner systems, and products that make work feel less clunky.
+        </p>
+        <p>
+          A lot of what I care about sits at the intersection of software, workflow, and company building. I like solving real problems, making things run more smoothly, and creating tools that are actually useful.
+        </p>
+        <div class="section">
+          <p>
+            Right now, I’m focused on <a href="https://chekkit.io" class="link" target="_blank" rel="noopener noreferrer">Chekkit</a> and other software ventures. Outside of work, I like cycling and generally gravitate toward things that feel active, thoughtful, and well-designed.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
